@@ -1,5 +1,7 @@
 artifacts
 cache
+deployments
+
 
 # Logs
 logs

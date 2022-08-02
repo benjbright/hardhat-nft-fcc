@@ -61,5 +61,24 @@ FreeCodeCamp blockchain course - Lesson 14 Hardhat NFT's
 
 21:19 Setting an NFT mint price
 
+21:24 Random IPFS NFT Recap
+
+21:26 Deploy script
+
+21:31 Uploading token images with Pinata
+- use IPFS node 
+- can also use Pinata https://app.pinata.cloud/
+- or nft.storage - in the repo can check out utils/uploadToNftStorage.js for a script
+- ```yarn add --dev @pinata/sdk```
+- to work with file paths ```yarn add --dev path```
+- ```yarn hardhat deploy --tags randomipfs,mocks```
+- NOTE - couldn't get the deploy script to work with the added tags, only running 'deploy'
+- NOTE - don't forget ```require("dotenv").config()``` when working with env variables
+- Can then copy the CID from Pinata into the IPFS (desktop) 
+
+21:47 Uploading token URIs (metadata) with Pinata
+
+
+
 
 
