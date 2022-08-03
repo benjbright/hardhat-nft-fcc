@@ -78,6 +78,24 @@ FreeCodeCamp blockchain course - Lesson 14 Hardhat NFT's
 
 21:47 Uploading token URIs (metadata) with Pinata
 
+21:57 Deploying part III
+
+22:00 Random IPFS NFT Tests
+
+22:03 Dynamic SVG on-chain NFT
+- IPFS - cheap to store data, but someone needs to pin our data
+- Can store data on-chain - but much more expensive!
+- If price of ETH above or below certain level - change the image
+
+22:10 Base64 Encoding
+- ```yarn add --dev base64-sol```
+
+22:16 Advanced section - Encoding, Opcodes and Calls
+- abi.encode and abi.encodePacked
+- being able to read the Opcodes = EVM Ethereum Virtual Machine
+
+
+
 
 
 
