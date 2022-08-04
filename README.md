@@ -94,6 +94,62 @@ FreeCodeCamp blockchain course - Lesson 14 Hardhat NFT's
 - abi.encode and abi.encodePacked
 - being able to read the Opcodes = EVM Ethereum Virtual Machine
 
+22:38 Intro to encoding function calls directly
+- To call a function on a contract need the ABI and the contract address
+- How to send a transaction that calls a function with just the data field populated?
+- Solidity has low level keywords - "staticcall" and "call"
+- "call" - how we call functions to change the state of the blockchain
+- "staticcall" - view or pure function calls at a low level
+- previous example:
+```javascript
+function withdraw(address recentWinner) public {
+    (bool success, ) = recentWinner.call{value: address(this).balance}("");
+    require(success, "Transfer Failed");
+}
+
+```
+- In our {} we were able to pass specific fields of a transaction, like value
+- In our () we were able to pass data in order to call a specific function - no data in this example
+- We only sent ETH so no need to call a function
+- If we want to call a function, or send any data - do it in the parenthesis
+
+22:44 Encoding recap
+
+22:46 Encoding function calls directly
+- In order to call a function using only the data field of the call, we need to encode:
+    - the function name
+    - the parameters we want to add
+    - down to the binary level
+
+- Each contract assigns each function an ID - this is the "function selector"
+    - The "function selector" is the first 4 bytes of the function signature
+    - The "function signature" is a string that defines the function name / parameters
+
+```javascript
+// Example Function Selector
+0xa9059cbbb
+
+// Example Function Signature
+"transfer(address, uint256)"
+```
+
+23:01 Creating an NFT TokenURI on-chain
+
+23:09 Making the NFT dynamic
+
+23:15 Dynamic SVG on-chain NFT deploy script
+- NOTE for running deploy scripts with tags:
+```javascript
+yarn hardhat deploy --tags "dynamicsvg,mocks"
+```
+- Don't forget the " " around the tags in the command line
+
+23:22 Deploying the NFT's to a testnet
+
+
+
+
+
 
 
 
