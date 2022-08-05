@@ -146,6 +146,15 @@ yarn hardhat deploy --tags "dynamicsvg,mocks"
 
 23:22 Deploying the NFT's to a testnet
 
+23:30 Final deployment
+- ```yarn hardhat deploy --network rinkeby --tags "main"```
+- Added the contract address for the randomIpfs contract to the vrf.chainlink consumer
+- Once added the new consumer / subscription can mint an NFT from each contract
+- ```yarn hardhat deploy --tags "mint" --network rinkeby```
+- NOTE error deploying randomIPFS section of mint.js? - timestamp at 23:32
+
+23:34 Lesson recap
+
 
 
 
