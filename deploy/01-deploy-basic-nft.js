@@ -28,3 +28,6 @@ module.exports = async function ({ getNamedAccounts, deployments }) {
 }
 
 module.exports.tags = ["all", "basic", "main"]
+
+// Deployed on Rinkeby test network at address:
+// 0x96aCB82c5F9B1513358216C0a45a4088DaaC96bb

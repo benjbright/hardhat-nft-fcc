@@ -30,3 +30,4 @@ contract BasicNFT is ERC721 {
         return s_tokenCounter;
     }
 }
+
