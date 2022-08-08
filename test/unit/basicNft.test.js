@@ -76,11 +76,5 @@ describe("Basic NFT Unit Tests", function () {
         await expect(token.transferFrom(deployer.address, addr1.address, 0))
             .to.emit(token, "Transfer")
             .withArgs(deployer.address, addr1.address, 0)
-
-        // token.on("Transfer", (from, to, tokenId, event) => {
-        //     console.log(
-        //         `Acccount ${from} sent token ID${tokenId} to account ${to}.`
-        //     )
-        // })
     })
 })
