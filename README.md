@@ -154,6 +154,7 @@ yarn hardhat deploy --tags "dynamicsvg,mocks"
 - NOTE error deploying randomIPFS section of mint.js? - timestamp at 23:32
 
 23:34 Lesson recap
+- To run individual test script ``` yarn hardhat test test/unit/basicNft.test.js```
 
 
 
