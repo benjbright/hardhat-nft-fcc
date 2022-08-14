@@ -132,6 +132,6 @@ describe("Basic NFT Unit Tests", function () {
             token.connect(addr1).transferFrom(addr1.address, addr2.address, 0)
         )
             .to.emit(token, "Transfer")
-            .withArgs(deployer.address, addr1.address, 0)
+            .withArgs(addr1.address, addr2.address, 0)
     })
 })
